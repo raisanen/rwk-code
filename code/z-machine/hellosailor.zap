@@ -14,7 +14,7 @@ ENDLOD::                        ; end of low memory
 
 
         .FUNCT GO               ; Header
-        
+
 START::                         ; entry point
 ; Call our Greeting function:
         CALL GREET,5,Greeting,Name >STACK
