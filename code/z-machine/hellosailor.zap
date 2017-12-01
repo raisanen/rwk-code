@@ -12,13 +12,16 @@ VOCAB::
 WORDS::                         ; Abbreviation table
 ENDLOD::                        ; end of low memory
 
+
         .FUNCT GO               ; Header
+        
 START::                         ; entry point
 ; Call our Greeting function:
         CALL GREET,5,Greeting,Name >STACK
         FSTACK                  ; Pop returned value off stack
         CRLF                    ; Final linefeed
         QUIT                    ; Game over, Man!
+
 
         .FUNCT GREET,N,G,S      ; Function
 TOP:    PRINT G
